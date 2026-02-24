@@ -52,7 +52,7 @@ body {
 .library {
     min-height: 80vh;
     position: relative;
-    
+
 }
 
 .footer {
@@ -71,27 +71,95 @@ body {
 .footer a {
     color: grey;
 }
-.right{
-    margin:16px 0;
+
+.right {
+    margin: 16px 0;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(34,34,34);
+    background-color: rgb(34, 34, 34);
 
 }
+
 .header>* {
     padding: 20px;
 }
-.spotify-playlists{
-    padding:16px;
+
+.spotify-playlists {
+    padding: 16px;
+
 }
-.spotify-playlists .card{
+
+.cardContainer {
+    margin: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.card {
     width: 200px;
-    border: 2px;
+    /* border: 2px; */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+
 }
-.card img{
+
+.card>* {
+    padding-top: 5px;
+
+}
+
+.card img {
     width: 100%;
     object-fit: contain;
+}
+
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 95px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+.signupbtn {
+    background-color: rgb(225, 223, 223);
+    color: rgb(156, 148, 148);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.signupbtn:hover {
+    font-size: 17px;
+    color: white
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loginbtn:hover {
+    font-weight: bold;
+    font-size: 17px;
 }
